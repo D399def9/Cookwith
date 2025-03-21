@@ -21,8 +21,8 @@ a1 {
  color: blue;
 }
 .navbar {
- background-color: #131313;
- height: 80px;
+ background-color: #090808;
+ height: 90px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -225,15 +225,15 @@ body {
     position: relative;
     margin-top: 8px;
 }
-#searchBox {  /* Corrected the ID to match the HTML element */
+.navbar_searchBox {
     position: fixed;  /* Fixed positioning so it stays in place while scrolling */
     top: 150px;  /* 150px from the top of the screen */
-    left: 20px;  /* 20px from the right edge of the screen */
-    width: 400px;  /* Width of the search box */
-    height: 40px;  /* Height of the search box */
-    font-size: 16px;  /* Text size inside the search box */
-    padding: 10px 10px;  /* Padding for the input */
-    border-radius: 25px;  /* Rounded corners for a sleek look */
+    right: 20px;  /* Positioned 20px from the right edge of the screen */
+    width: 300px !important;  /* Adjusted width of the search box */
+    height: 50px !important;  /* Adjusted height of the search box */
+    font-size: 14px;  /* Adjusted text size inside the search box */
+    padding: 10px 10px;  /* Adjusted padding for the input */
+    border-radius: 20px;  /* Rounded corners for a sleek look */
     border: 1px solid #ccc;  /* Light border color */
     background-color: #f3ecec;  /* White background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */

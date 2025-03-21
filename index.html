@@ -17,6 +17,8 @@
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
+            <input type="text" id="searchBox" placeholder="Search recipes..." onkeyup="searchFunction()">
+            <script src="app.js"></script>
           <li class="navbar__item">
             <a href="#home" class="navbar__links" id="home-page">Home</a>
           </li>
@@ -45,8 +47,6 @@
         <iframe src="https://www.youtube.com/embed/l8Mjt2fLXUg" frameborder="0" allowfullscreen></iframe>
     </div>
     <img src="images/WhatsApp Image 2025-02-22 at 22.41.30 copy.jpeg" alt="profile pic" class="hero__img">
-
-    <input type="text" id="searchBox" placeholder="Search recipes..." onkeyup="searchFunction()">
-    <script src="app.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; object-src 'none'; style-src 'self'">
   </body>
 </html> 
