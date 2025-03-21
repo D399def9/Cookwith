@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cooking web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Cooking Life</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page">Services</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/recips.html" class="navbar__links" id="recipes-page">Recipes</a>
+          </li>
+        </ul>
+        <div class="navbar__social"></div>
+          <a href="https://www.youtube.com/@SLHEALTHYFOOD" target="_blank" class="youtube-icon">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+       <a1>Chef Palitha</a1>
+    <nav class="hero__container">
+      <h1>Welcome to Cooking Life</h1>
+    </nav>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/l8Mjt2fLXUg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <img src="images/WhatsApp Image 2025-02-22 at 22.41.30 copy.jpeg" alt="profile pic" class="hero__img">
+
+    <input type="text" id="searchBox" placeholder="Search recipes..." onkeyup="searchFunction()">
+    <script src="app.js"></script>
+  </body>
+</html> 

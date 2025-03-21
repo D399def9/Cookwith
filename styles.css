@@ -1,0 +1,264 @@
+h1 {
+    color: rgb(22, 193, 94);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+a1 {
+    color: rgb(248, 250, 249);
+    position: absolute;
+    top: 240px;
+    right: 95px;
+    margin: 5px;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Kumbh Sans', sans-serif;
+ color: blue;
+}
+.navbar {
+ background-color: #131313;
+ height: 80px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.2rem;
+ position: sticky;
+ top: 0;
+ z-index: 999;
+}
+.navbar__container {
+ display: flex;
+ justify-content: space-between;
+ height: 80px;
+ z-index: 1;
+ width: 100%;
+ max-width: 1300px;
+ margin: 0 auto;
+ padding: 0 50px;
+}
+
+#navbar__logo {
+ background-color: #77ff9b;
+ background-image: linear-gradient(to top, #0f0407 0%, #99ffca 100%);
+ background-size: 100%;
+ -webkit-background-clip: text;    
+ -moz-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ align-items: center;
+ cursor: pointer;
+ text-decoration: none;
+ font-size: 2rem;
+ margin-top: 22px;
+}
+
+.navbar__menu {
+ display: flex;
+ align-items: center;
+ list-style: none;
+ text-align: center;
+
+}
+.navbar__item {
+ height: 80px;
+}
+.navbar__links {
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-decoration: none;
+ padding: 0 1rem;
+ height: 100%;
+}
+.navbar__btn {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 0 1rem;
+ width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color : #fff;
+}
+.button:hover {
+    transition: all 0.3s ease;
+    background: #4837ff;
+}
+
+.navbar__links:hover {
+    transition: all 0.3s ease;
+    color: #1111ea;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0; 
+    }
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        z-index: -1;
+        background: #131313;
+    }
+    .navbar__menu.active {
+        background: #131313;
+        top: 100px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.5rem;
+    }
+    #navbar__logo {
+        padding-left: 25px;
+        
+    }
+
+    .navbar__toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+
+    .navbar__toggle .bar {
+       display: block;
+       cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+}
+body {
+    background-color: #060202;
+}
+.hero__img{
+    width: 145px; /* Set width */
+    height: 145px; /* Set height */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    border: 3px solid #1f0707; /* Optional: Adds a border around the image */
+    display: block; /* Ensures proper spacing */
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+.hero__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 0 1rem;
+    position: relative;
+    margin-top: 8px;
+}
+#searchBox {  /* Corrected the ID to match the HTML element */
+    position: fixed;  /* Fixed positioning so it stays in place while scrolling */
+    top: 150px;  /* 150px from the top of the screen */
+    left: 20px;  /* 20px from the right edge of the screen */
+    width: 400px;  /* Width of the search box */
+    height: 40px;  /* Height of the search box */
+    font-size: 16px;  /* Text size inside the search box */
+    padding: 10px 10px;  /* Padding for the input */
+    border-radius: 25px;  /* Rounded corners for a sleek look */
+    border: 1px solid #ccc;  /* Light border color */
+    background-color: #f3ecec;  /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+    transition: all 0.3s ease;  /* Smooth transition for interactive effects */
+}
+.youtube-icon {
+    position: absolute;
+    top: 50%; /* Adjust for vertical centering */
+    right: 20px; /* Adjust for horizontal positioning */
+    transform: translateY(-50%); /* Vertically center the icon */
+    color: #fff; /* Change the icon color if necessary */
+}
+/* Style for centering the video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+.video-container iframe {
+    width: 80%; /* Adjust width to fit in the page */
+    max-width: 800px; /* Maximum width */
+    height: 450px; /* Adjust height for proper aspect ratio */
+    border-radius: 10px; /* Slightly rounded corners for smoothness */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a smooth effect */
+}
