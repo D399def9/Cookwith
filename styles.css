@@ -252,13 +252,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
+    width: 100%;
 }
 
 .video-container iframe {
-    width: 80%; /* Adjust width to fit in the page */
+    position: absolute; /* Positioning to move it */
+    top: 150px; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 60%; /* Adjust width to fit in the page */
     max-width: 800px; /* Maximum width */
-    height: 450px; /* Adjust height for proper aspect ratio */
+    height: 400px; /* Adjust height for proper aspect ratio */
     border-radius: 10px; /* Slightly rounded corners for smoothness */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a smooth effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
